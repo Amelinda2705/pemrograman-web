@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="stylesheet" href="3-css.css">
+    <style>
+        .tiga {
+            font-size: 20px; 
+            color: blue; 
+            background-color: salmon;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="font-size: 20px; color: blue; background-color: salmon;">1. Inline CSS</h1>
+        <span>
+            Tipe yang pertama adalah Inline CSS. Seperti namanya, kode CSS ini langsung ditempatkan di dalam baris    kode HTML. Contohnya adalah seperti ini:
+                <img src="inline.png" alt=""><br>
+            Jadi, kode HTML nya sendiri hanyalah penjelasan tentang heading. Namun, kode CSS dimasukkan untuk menambahkan style di sana, yaitu dengan menambahkan warna biru dan meratakan tulisan menjadi di tengah.
+            Yang terpenting dari Inline CSS adalah pengaruhnya. Style yang diberikan di sini spesifik hanya untuk heading, tidak untuk elemen HTML lainnya. 
+        </span>
+        
+    <h1 class="dua">2. Eksternal CSS</h1>
+        <span>
+            Kalau Inline CSS hanya mempengaruhi satu baris, External CSS bisa mempengaruhi keseluruhan website. Tentunya hal ini dilakukan dengan mengubah file CSS, tanpa perlu menuliskan kode secara berulang.
+
+            Perlu diperhatikan, ciri khas dari External CSS adalah menggunakan tag <head>. Setelah itu, baru sisipkan file CSS sesuai kebutuhan. Contohnya seperti ini:
+
+            <img src="eksternal1.png" alt="">
+            “mystyle.css” adalah file CSS yang ingin Anda sisipkan. Nah, di dalam file tersebut, kurang lebih seperti ini gambarannya:
+
+            <img src="eksternal2.png" alt="">
+        </span>
+        
+    <h1 class="tiga">3. Internal CSS</h1>
+        <span>
+            Tipe yang terakhir adalah Internal CSS. Kurang lebih, tipe yang satu ini mirip dengan Inline CSS. Namun, kodenya tidak dituliskan di baris yang sama. 
+            Contohnya adalah sebagai berikut:
+            <img src="internal.png" alt="">
+        </span>
+</body>
+</html>
