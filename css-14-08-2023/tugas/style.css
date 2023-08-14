@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 30px 70px;
+}
+
+nav {
+    margin: 30px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    margin-right: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+nav ul li a:hover, button:hover {
+    color: blue;
+}
+
+nav ul li:nth-child(2) .content a {
+    display: block;
+    padding: 15px;
+    /* background-color: aliceblue; */
+    border-radius: 5px;
+    margin: 1px;
+}
+
+nav ul li:nth-child(2) .content a:hover {
+    background-color: #EEE0C9;
+}
+
+nav ul li:nth-child(2) .content {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 130px;
+    /* top: 65px; */
+    /* right: 260px; */
+}
+
+nav ul li:nth-child(2):hover .content {
+    display: block;
+}
+
+nav ul li a button {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+main table tr td input {
+    margin-right: 5px;
+}
+
+main table tr td:nth-child(2) input {
+    margin-left: 5px;
+
+}
+
+main form input[type="submit"] {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #000;
+    background-color: inherit;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #737378;
+    border-radius: 10px;
+}
+
+main form input[type="submit"]:hover {
+    transition: .2s;
+    background-color: salmon;
+}
+
+header {
+    margin-top: 20px;
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+  
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  nav:nth-child(2) {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+  }
+  
+  nav:nth-child(2) ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+
+
+
