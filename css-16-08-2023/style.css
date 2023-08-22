@@ -6,6 +6,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
 nav {
     padding: 15px;
     display: flex; 
@@ -33,7 +38,8 @@ nav:nth-child(1) ul li a {
     padding: 16px;
 }
 
-nav:nth-child(1) ul li a:hover, button:hover {
+nav:nth-child(1) ul li a:hover, 
+nav:nth-child(1) ul li button:hover {
     background-color: #04AA6D!important;
 }
 
@@ -73,6 +79,8 @@ nav ul li a button {
     background-color: inherit;
 }
 
+/* nav 2 */
+
 nav:nth-child(2){
     padding: 0;
     background-color: #282a35;
@@ -82,15 +90,23 @@ nav:nth-child(2) ul li{
     padding: 9px;
 }
 
-nav:nth-child(2) ul li a {
-    padding: 0 10px;
+nav:nth-child(2) ul li button {
+    padding: 0 9.5px;
     color: #fff;
     font-size: 14px;
     text-decoration: none;
+    border: none;
+    outline: none;
+    background-color: transparent;
 }
 
-nav:nth-child(2) ul li a img {
+nav:nth-child(2) ul li button img {
     width: 15px;
+}
+
+nav:nth-child(2) ul li button a {
+    text-decoration: none;
+    color: #fff;
 }
 
 nav:nth-child(2) ul li:hover {
@@ -100,3 +116,255 @@ nav:nth-child(2) ul li:hover {
 nav:nth-child(2) ul {
     margin-left: 0;
 }
+
+nav:nth-child(2) ul li:nth-child(1) {
+    background-color: #04AA6D;
+}
+
+main {
+    display: flex;
+    height: 100%;
+}
+
+/* side bar */
+
+main .side-bar {
+    padding: 20px 0;
+    width: 25%;
+    background-color: #E7E9EB;
+    height: 75vh;
+}
+
+main .side-bar h2 {
+    padding: 0 20px;
+    font-weight: 500;
+}
+
+main .side-bar p {
+    /* width: 110%; */
+    padding: 3px 20px;
+}
+
+main .side-bar p:hover {
+    background-color: #A5A5A5;
+}
+
+main .side-bar p:nth-child(3),
+main .side-bar p:nth-child(3) a {
+    background-color: #04AA6D;
+    color: #fff!important;
+}
+
+
+main .side-bar p a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* content */
+
+main .content {
+    padding: 20px;
+    padding-left: 40px;
+    padding-bottom: 130px;
+    overflow: auto;
+}
+
+/* global */
+
+main .content hr {
+    border-top: 1px solid #eee;
+}
+
+main .content h1 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+main .content ul li {
+    margin-left: 50px;
+    margin-bottom: 5px;
+}
+
+main .content ul {
+    margin-bottom: 30px;
+}
+
+main .content img {
+    margin-bottom: 20px;
+}
+
+main .content code {
+    color: #dc143c;
+    background-color: #E7E9EB;
+}
+
+/* global end */
+
+main .content .satu h1 {
+    font-size: 41px;
+}
+
+main .content .dua p {
+    padding: 30px 0;
+}
+
+main .content .empat h3 {
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+main .content .empat .contoh-code {
+    padding: 25px 20px;
+    background-color: #E7E9EB;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main .content .empat .contoh-code h3 {
+    font-size: 24px;
+}
+
+main .content .empat .contoh-code .code {
+    background-color: #fff;
+    padding: 8px 12px;
+    border-left: 4px solid #04AA6D;
+    margin-bottom: 20px;
+}
+
+main .content .empat .contoh-code button {
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    border: none;
+    padding: 8px 20px;
+}
+
+main .content .empat .contoh-code button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main .content .lima .multiple-p p.tag {
+    margin: 15px 7px;
+}
+
+main .content .enam p.ad {
+    text-align: center;
+    margin: 20px auto;
+}
+
+main .content .enam p:nth-child(1) code {
+    color: #000;
+    background-color: transparent;
+}
+
+main .content .enam p {
+    margin-bottom: 10px;
+}
+
+main .content .tujuh p {
+    margin-bottom: 20px;
+}
+
+main .content .btn {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .content .btn button {
+    position: relative;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 5px;
+    background-color: #04AA6D;
+    border: none;
+    padding: 8px 20px;
+}
+
+main .content .btn button:nth-child(1) {
+    padding-left: 35px;
+}
+
+main .content .btn .btn-dua {
+    padding-right: 35px;
+}
+
+main .content .btn button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main .content .btn button:nth-child(1) a svg {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+}
+
+main .content .btn button:nth-child(2) a svg,
+main .content .btn button:nth-child(3) a svg {
+    position: absolute;
+    top: 13px;
+    right: 15px;
+}
+
+
+main .content .multiple-p p {
+    padding-bottom: 8px;
+}
+
+main .content .multiple-p p.tag {
+    font-size: 1.3em;
+}
+
+main .content .multiple-p p.tag code {
+    color: brown;
+    background-color: transparent;
+}
+
+main .content table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+main .content table {
+    border: 1px solid #ccc;
+}
+
+main .content table tr:nth-child(even) {
+    background-color: #E7E9EB;
+}
+
+main .content table tr td, 
+main .content table tr th {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 15px;
+    text-align: left;
+}
+
+main .content table tr td a {
+    color: #000;
+}
+
+main .content p.note {
+    background-color: #FFFFCC;
+    margin: 20px -20px;
+    margin-left: -40px;
+    padding: 30px 40px;
+}
+
+main .content .btn button.btn-white {
+    background-color: transparent;
+    border: 1px solid #ccc;
+
+}
+
+main .content .btn button.btn-white a {
+    color: #000;
+    font-weight: 500;
+}
+
