@@ -67,6 +67,10 @@ nav ul li .content {
     /* right: 260px; */
 }
 
+nav ul li:nth-child(4) .content {
+    width: 200px;
+}
+
 nav ul li:hover .content {
     display: block;
 }
@@ -77,6 +81,7 @@ nav ul li a button {
     outline: none;
     color: #000;
     background-color: inherit;
+    cursor: pointer;
 }
 
 /* nav 2 */
@@ -98,6 +103,7 @@ nav:nth-child(2) ul li button {
     border: none;
     outline: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 nav:nth-child(2) ul li button img {
@@ -149,14 +155,13 @@ main .side-bar p:hover {
     background-color: #A5A5A5;
 }
 
-main .side-bar p:nth-child(3),
-main .side-bar p:nth-child(3) a {
+main .side-bar p:active {
     background-color: #04AA6D;
     color: #fff!important;
 }
 
 
-main .side-bar p a {
+main .side-bar a {
     text-decoration: none;
     color: #000;
 }
