@@ -64,13 +64,33 @@ echo "<br>";
 $film = "Avengers";
 $umur = 18;
 $paket = "VIP";
+$uang = 150000;
+$harga_vip = 100000;
+$harga_biasa = 50000;
+
+$kembali_vip = $uang - $harga_vip;
+$kembali_biasa = $uang - $harga_biasa;
 
 if ($umur >= 18) {
     if ($film == "Avengers") {
         if ($paket == "VIP") {
             echo "Tiket $film VIP anda berhasil dibeli dengan harga Rp. 100.000/tiket";
+            if ($uang > $harga_vip) {
+                echo "kembalian anda Rp. $kembali_vip";
+            } else if ($uang == $harga_vip) {
+                echo "uang anda pas";
+            } else {
+                echo "uang anda kurang";
+            }
         } else if ($paket == "biasa") {
             echo "Tiket $film biasa berhasil dibeli dengan harga RP. 50.000/tiket";
+            if ($uang > $harga_biasa) {
+                echo "kembalian anda Rp. $kembali_biasa";
+            } else if ($uang == $harga_biasa) {
+                echo "uang anda pas";
+            } else {
+                echo "uang anda kurang";
+            }
         } else {
             echo "Pilih paket anda";
         }
