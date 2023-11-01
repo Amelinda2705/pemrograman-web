@@ -86,11 +86,11 @@ if ($umur >= 10) {
     echo "2. VIP <br/>";
     echo "3. REGULER <br/>";
     echo "Pilih Tiket : $paket <br/>";
-        if ($amount == 1) {
+        if ($paket == 1) {
             echo "Selamat $nama Menonton Pada Tribun VVIP <br/>";
-        } else if ($amount == 2) {
+        } else if ($paket == 2) {
             echo "Selamat $nama Menonton Pada Tribun VIP <br/>";
-        } else if ($amount == 3) {
+        } else if ($paket == 3) {
             echo "Selamat $nama Menonton Pada Tribun REGULER <br/>";
         } else {
             echo "Maaf tiket tidak tersedia <br/>";
