@@ -61,6 +61,8 @@ foreach ($produk as $key => $product) {
     echo "Produk " . ($key + 1) . " = $productName <br />";
     echo "Harga = $productPrice <br /><br />";
     
+    $harga = $product["harga"] * $product["stok"];
+    echo "Total Modal : " . $harga . "<br /><br />";
 }
 
 $totalHarga = 0;
