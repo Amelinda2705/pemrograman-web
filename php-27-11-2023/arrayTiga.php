@@ -44,10 +44,9 @@ foreach ($produk as $item) {
     echo "Stok: " . $item["stok"] . "<br /><br />";
 }
 
+$totalStok = 0;
 
 foreach ($produk as $item){
-    $totalStok = 0;
-
     $totalStok += $item["stok"];
 }
 
@@ -63,10 +62,12 @@ foreach ($produk as $key => $product) {
     echo "Harga = $productPrice <br /><br />";
     
 }
+
+$totalHarga = 0;
+
 foreach ($produk as $product) {
     $harga = $product["harga"] * $product["stok"];
 
-    $totalHarga = 0;
     $totalHarga += $harga;
 }
 
