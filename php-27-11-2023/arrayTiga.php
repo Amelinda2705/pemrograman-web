@@ -16,6 +16,8 @@ foreach ($nama_capres as $nama) {
 
 echo "<br />";
 
+// kasus 1
+
 $nama = [
     "Nama" => "John Doe",
     "Umur" => 1,
@@ -28,31 +30,45 @@ foreach ($nama as $key => $value) {
 
 echo "<br />";
 
+// kasus 2
+
 $produk = [
     ["nama" => "Laptop", "harga" =>1200, "stok" => 10],
     ["nama" => "Smartphone", "harga" =>500, "stok" => 20],
     ["nama" => "Printer", "harga" =>1500, "stok" => 5],
 ];
 
-// $totalStok = $produk[0]["stok"] + $produk[1]["stok"] + $produk[2]["stok"];
-
 foreach ($produk as $item) {
     echo "Produk: " . $item["nama"] . "<br/ >";
     echo "Harga: Rp." . $item["harga"] . "<br />";
     echo "Stok: " . $item["stok"] . "<br /><br />";
-    $totalStok = 0;
-    foreach ($produk as $item){
-        $totalStok += $item["stok"];
-    }
 }
 
-// echo "Total stok : " . $totalStok . "<br />";
 
-// foreach ($produk as $item) {
-//     for ($i = 1; $i <= 3; $i++) {
-//         echo "Produk $i: " . $item["nama"] . "<br/ >";
-//         echo "Harga: Rp." . $item["harga"] . "<br />";
-//     }
-// }
+foreach ($produk as $item){
+    $totalStok = 0;
 
+    $totalStok += $item["stok"];
+}
+
+echo "Total stok : " . $totalStok . "<br /><br />";
+
+// kasus 3
+
+foreach ($produk as $key => $product) {
+    $productName = $product['nama'];
+    $productPrice = $product['harga'];
+    
+    echo "Produk " . ($key + 1) . " = $productName <br />";
+    echo "Harga = $productPrice <br /><br />";
+    
+}
+foreach ($produk as $product) {
+    $harga = $product["harga"] * $product["stok"];
+
+    $totalHarga = 0;
+    $totalHarga += $harga;
+}
+
+echo "Total Harga : " . $totalHarga . "<br /><br />";
 
