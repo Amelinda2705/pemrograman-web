@@ -58,8 +58,9 @@ foreach ($produk as $key => $product) {
     $productName = $product['nama'];
     $productPrice = $product['harga'];
     
-    echo "Produk " . ($key + 1) . " = $productName <br />";
-    echo "Harga = $productPrice <br /><br />";
+    echo "Produk " . ($key + 1) . " = $productName => ";
+    echo "Harga = $productPrice => ";
+    echo "Stok: " . $product["stok"] . " => ";
     
     $harga = $product["harga"] * $product["stok"];
     echo "Total Modal : " . $harga . "<br /><br />";
@@ -73,5 +74,5 @@ foreach ($produk as $product) {
     $totalHarga += $harga;
 }
 
-echo "Total Harga : " . $totalHarga . "<br /><br />";
+echo "Total Modal : " . $totalHarga . "<br /><br />";
 
